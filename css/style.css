@@ -1,0 +1,30 @@
+#startBtn{
+    height: 50px;
+    width: 200px;
+    margin-left: 10px;
+}
+.ib{
+    display: inline-block;
+    margin: 10px;
+}
+#col1{
+    vertical-align: top;
+    width: 220px;
+    height: 850px;
+}
+#col2{
+    width: 850px;
+    height: 850px;
+}
+form{
+    border-style: solid;
+    border-width: 3px;
+    padding: 5px;
+}
+#fire{
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 30px;
+    width: 180px;
+    font-size: large;
+}

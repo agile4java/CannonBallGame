@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 3 - Conway</title>
+    <script src="js/app.js"></script>
+    <script src="js/ball.js"></script>
+    <script src="js/board.js"></script>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/board.css" type="text/css">
+    <link rel="stylesheet" href="css/ball.css" type="text/css">
+
+</head>
+<body>
+
+<div class="ib" id="col1">
+    <p>
+        <h2>Game Controls</h2>
+    <br>
+
+    <button class="controlBtn" id="startBtn" onclick="startNewGame()">Start New Game</button>
+    </p>
+    <form>
+        <label for="speed">Power</label>
+        <input type="range" min="1" max="100" value="1" id="speed"
+               step="1" oninput="updateSpeed(value)">
+        <output for="speed" id="power">1</output>
+        <br>
+        <label for="angle">Angle</label>
+        <input type="range" min="-75" max="75" value="0" id="angle"
+               step="1" oninput="updateAngle(value)">
+        <output for="angle" id="angleDisplay">0</output>
+        <br>
+        <button id="fire" onclick="fireCannon()">Fire!</button>
+    </form>
+</div>
+<div class="ib" id="col2">
+    <canvas id="board" width="800" height="800"></canvas>
+</div>
+</body>
+</html>
